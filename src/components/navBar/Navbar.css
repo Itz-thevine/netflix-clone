@@ -1,0 +1,71 @@
+.navBar{ 
+    color: white;
+    font-size: 0.875rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(0deg, rgba(15,15,15,0.002424947331460703) 0%, rgba(36,36,38,0.783323823735955) 100%, rgba(30,32,33,0.5979305653089888) 100%);
+
+}
+
+.scrolled{
+    background-color: var(--main-color);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 70px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left img, .right img{
+    height: 1.563rem;
+}
+
+.left img{
+    margin-right: 2.5rem;
+}
+
+.left span{
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    align-items: center;    
+}
+
+.right img{
+    border-radius: 0.313rem;
+    object-fit: cover;
+}
+
+.icons{
+    margin: 0 0.938rem;
+    cursor: pointer;
+}
+
+.option{
+    display: none;
+}
+
+.profile:hover .option{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--main-color);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.option span{
+    cursor: pointer;
+}
