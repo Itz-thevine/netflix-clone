@@ -6,6 +6,7 @@ function Featured({type}) {
 
     return (
         <div className='featured'>
+          
           {type && (
             <div className='category'>
               <span>{type === 'Movie'? 'Movie' : 'Series'}</span>  
@@ -25,11 +26,12 @@ function Featured({type}) {
               </select>
             </div>
           )}
+
           <div className='featuredImage'>
-            <img src='https://media-exp1.licdn.com/dms/image/C4E03AQHWzJBxnRD5RA/profile-displayphoto-shrink_800_800/0/1638644433707?e=1646870400&v=beta&t=ZU7gt65sAcRJLa-1Ax5tI1Afq1bzmOvhoQZdHTafT1Y'></img>
+            <img src='https://thurrott.s3.amazonaws.com/wp-content/uploads/sites/2/2022/01/14172326/netflix-1536x864.jpg'></img>
           </div>
           <div className='info'>
-            <img src= 'https://o.remove.bg/downloads/b98292e7-41ef-456c-8dc2-e9439b29fdca/black-panther-marvel-studios-marvel-cinematic-universe-film-the-poster-title-removebg-preview.png'></img>
+            <img src= 'https://th.bing.com/th/id/R.1303a29a7b7bd0edf23b6ae40dd91973?rik=gnYs40mIlctQSw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2favengers-logo-png-avengers1-png-2943.png&ehk=%2bpt54xyYZcgRjIhuMEyOP4JqukDQx%2fDt5%2fq8k20Dej8%3d&risl=1&pid=ImgRaw&r=0'></img>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et nulla a nunc placerat laoreet. Donec vitae aliquet mi, 
               eu auctor magna. Nullam elementum, mi sit amet varius tristique, est metus bibendum justo, id tempus enim lorem quis dolor. 

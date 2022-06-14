@@ -26,7 +26,7 @@ const Navbar = () => {
                     <BiIcon.BiSearchAlt2 className='icons'/>
                     <span className='icons'>Kids</span>
                     <IoIcon5.IoNotificationsSharp className='icons'/>
-                    <img className='icons' src='https://media-exp1.licdn.com/dms/image/C4E03AQHWzJBxnRD5RA/profile-displayphoto-shrink_800_800/0/1638644433707?e=1646870400&v=beta&t=ZU7gt65sAcRJLa-1Ax5tI1Afq1bzmOvhoQZdHTafT1Y'></img>
+                    <img className='icons' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'></img>
                     <div className='profile'>
                         <IoIcon.IoMdArrowDropdown className='icons'/>
                         <div className='option'>

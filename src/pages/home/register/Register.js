@@ -13,15 +13,7 @@ function  Register() {
     var RegEmail = /^[a-z]+[a-z0-9]@[a-z]+\.[a-z]+\.?[a-z]$/;
 
     const handleEmail_input = (userEmail) => {
-        if(!userEmail) {
-            setEmailErr('Email is required')
-        } else if(userEmail && userEmail.length < 5) {
-            setEmailErr('Email is required')
-        } else if(!RegEmail.test(userEmail)) {
-            setEmailErr('Please enter a valid email')
-        }else {
-            setEmailErr(null) 
-        }
+       
     }
 
     const handleClick = ()=>{
