@@ -1,13 +1,16 @@
 import './App.css';
-// import LogIn from './pages/home/logIn/LogIn'
-// import Register from './pages/home/register/Register';
+import LogIn from './pages/logIn/LogIn'
+import Register from './pages/register/Register';
 import { Home } from './pages/home/Home';
-// import Watch from './pages/home/watch/Watch';
+import Watch from './pages/watch/Watch';
+import {Routes, Route, Link} from 'react-router-dom'
 
 function App() {
   return (
     <div>
-       <Home/>
+       <Routes>
+          <Route path='/' exact element={<Register/>}/>
+       </Routes>
     </div>
   );
 }

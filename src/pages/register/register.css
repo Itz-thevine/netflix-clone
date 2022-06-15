@@ -3,7 +3,7 @@
     height: 100vh;
     background: linear-gradient(0deg, rgba(15,15,15,0.5) 0%, rgba(30, 32, 33, 0.304) 53%, rgba(36,36,38,0.5) 100%), url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
     background-position: cover;
-    position: relative;
+    /* position: relative; */
 }
 
 .wrapper{
@@ -42,11 +42,11 @@
 
 }
 
-.container h1{
+.s50{
     font-size: 50px;
 }
 
-.container h2{
+.s20{
     font-size: 20px;
 }
 
@@ -83,4 +83,53 @@
     cursor: pointer;
     font-weight: 600;
 }
+
+/* other section */
+.other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: max-content;
+    padding: 0 ;
+}
+
+.otherSection{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 50%;
+}
+
+.post{
+    display: flex;
+    flex: 1;
+    width: auto;
+    height: 500px;
+}
+
+.our-story-card-animation-container{
  
+  position: relative;
+}
+
+.our-story-card-img{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.our-story-card-animation{
+    position: absolute;
+    top: 101px;
+    left: 88px;
+    z-index: 2;
+}
+
+.question{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

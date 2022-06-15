@@ -1,0 +1,15 @@
+.ques{
+    background-color: #303030;
+    padding: 1% 5%;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.s20{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
