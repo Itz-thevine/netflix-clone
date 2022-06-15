@@ -9,10 +9,10 @@ function LogIn() {
                 </div>
             </div>
             <div className='container'>
-                <form>
+                <form className='logIn'>
                     <h1>Sign In</h1>
-                    <input type='email' placeholder='enter email or phone number'/>
-                    <input type='password' placeholder='enter email'/>
+                    <input type='email' className='containerInput' placeholder='enter email or phone number'/>
+                    <input type='password' className='containerInput' placeholder='enter email'/>
                     <button className='logInBtn'>Sign In</button>
                     <span>New to Netflix ? <b>Sign Up Now.</b></span>
                     <small>This page is protected by Google reCAPTCHA to ensure you're not a bot. <b>Learn more.</b></small>

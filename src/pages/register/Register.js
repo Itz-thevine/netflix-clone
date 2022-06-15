@@ -3,34 +3,12 @@ import {useRef} from 'react'
 import {useState} from 'react';
 import HomeOther from '../../components/homeOther/HomeOther';
 import Question from '../../components/question/Question';
+import GetStarted from '../../components/getStarted/GetStarted';
 
 
 function  Register() {
-    const emailRef = useRef();
-    const passwordRef = useRef();
-    const [email, setEmail] = useState(""); 
-    const [password, setPassword] = useState("")
-    const [emailErr, setEmailErr] = useState("")
-
-    var RegEmail = /^[a-z]+[a-z0-9]@[a-z]+\.[a-z]+\.?[a-z]$/;
-
-    const handleEmail_input = (userEmail) => {
-       
-    }
-
-    const handleClick = ()=>{
-        setEmail(emailRef.current.value);
-    }
-
-    const handlePassword_input = () => {
-        setPassword(passwordRef.current.value)
-    }
-
-    const handleFinish = ()=>{
-        console.log(password)
-        console.log(email);  
-    }    
-
+    
+   
 
     return (
         <>
@@ -45,22 +23,10 @@ function  Register() {
                 <h1 className='s50'>Unlimited movies, TV shows, and more.</h1>
                 <h2 className='s20'>Watch anywhere. Cancel anytime.</h2>
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                <div className='input'>
-                    {!email ?
-                        <>
-                            <input type='email' placeholder='email address' ref={emailRef} onChange={(e)=> handleEmail_input(e.target.value)}/>
-                            <button className='registerButton' onClick={handleClick}>Get Started</button>
-                        </>
-                    :
-                        <>
-                            <input type='password' ref={passwordRef} placeholder='password' value={password} onChange={handlePassword_input}/>
-                            <button className='registerButton' onClick={handleFinish}> Start</button>
-                        </>
-                    } 
-                </div>
-                <div className='err'>
-                    <p className='err'>{emailErr}</p>
-                </div>
+                <div className='getStartp'>
+                        <GetStarted/>
+                    </div>
+                
             </div>
         </div>
         <div>
@@ -133,14 +99,19 @@ function  Register() {
                         question='Where can I watch' 
                         answer= "Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles."
                     />
-                    <div style={{marginTop: '4%'}}>
+                    <div className='getStartp'>
                         <p className='s20'>
                             Ready to watch? Enter your email to create or restart your membership.
                         </p>
+                        <GetStarted/>
                     </div>
                 </div>
             </HomeOther>
-            
+            <HomeOther>
+               <div className='s20 footer'>
+                    Cloned practice project by Mmaduabuchi Divine Ikechukwu
+                </div> 
+            </HomeOther>
         </div>
         </>
     )
