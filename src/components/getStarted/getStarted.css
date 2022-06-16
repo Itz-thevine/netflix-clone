@@ -1,12 +1,17 @@
 .getStarted{
     width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .formStyle{
     margin-top: 2%;
-    width: inherit;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn{
@@ -15,6 +20,14 @@
     padding: 3% 5%;
     display: flex;
     justify-content: center;
+}
+
+.showErr{
+    display: flex;
+    width: -webkit-fill-available;
+    align-items: flex-start;
+    padding: 1% 3%;
+    color: #ffa00a;
 }
 
 .ctrlform{
@@ -55,4 +68,20 @@
     height: 100%;
     top: 1px;
     height: auto;
+    font-size: 12px;
+    padding-top: 0.4%;
+}
+
+input:hover{
+    border: none;
+    outline: none;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+input[type='submit']{
+    border: none;
+    color: white;
 }

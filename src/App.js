@@ -10,6 +10,7 @@ function App() {
     <div>
        <Routes>
           <Route path='/' exact element={<Register/>}/>
+          <Route path='/login' exact element={<LogIn/>}/>
        </Routes>
     </div>
   );

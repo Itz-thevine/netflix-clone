@@ -1,15 +1,18 @@
 import './login.css';
+import { Link } from 'react-router-dom'
 
 function LogIn() {
     return (
         <div className='logIn'>
             <div className='top'>
                 <div className='wrapper'>
-                <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img>            
+                <Link to='/'>
+                    <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img>            
+                </Link>
                 </div>
             </div>
             <div className='container'>
-                <form className='logIn'>
+                <form className='logInForm'>
                     <h1>Sign In</h1>
                     <input type='email' className='containerInput' placeholder='enter email or phone number'/>
                     <input type='password' className='containerInput' placeholder='enter email'/>

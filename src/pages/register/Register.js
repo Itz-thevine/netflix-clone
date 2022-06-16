@@ -4,6 +4,7 @@ import {useState} from 'react';
 import HomeOther from '../../components/homeOther/HomeOther';
 import Question from '../../components/question/Question';
 import GetStarted from '../../components/getStarted/GetStarted';
+import {Link} from 'react-router-dom'
 
 
 function  Register() {
@@ -15,15 +16,17 @@ function  Register() {
         <div className='register'>
             <div className='top'>
                 <div className='wrapper'>
-                <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img>           
-                <button className='signInBtn'>Sign In</button>    
+                <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img> 
+                <Link to='/logIn'>
+                    <button className='signInBtn'>Sign In</button>    
+                </Link>          
                 </div>
             </div>
             <div className='container'>
                 <h1 className='s50'>Unlimited movies, TV shows, and more.</h1>
                 <h2 className='s20'>Watch anywhere. Cancel anytime.</h2>
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                <div className='getStartp'>
+                <div className='getStartp' style={{paddingTop: '0px', marginTop: '0'}}>
                         <GetStarted/>
                     </div>
                 
