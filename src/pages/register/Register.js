@@ -1,6 +1,4 @@
 import './register.css';
-import {useRef} from 'react'
-import {useState} from 'react';
 import HomeOther from '../../components/homeOther/HomeOther';
 import Question from '../../components/question/Question';
 import GetStarted from '../../components/getStarted/GetStarted';

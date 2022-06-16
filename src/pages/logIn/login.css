@@ -1,9 +1,11 @@
 .logIn{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(0deg, rgba(15,15,15,0.5) 0%, rgba(30, 32, 33, 0.304) 53%, rgba(36,36,38,0.5) 100%), url('https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png');
-    background-position: cover;
+    background-position: center;
+    background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .wrapper{
@@ -17,13 +19,13 @@
     width: 150px;
 }
 
-.container{
+.cont{
     width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     bottom: 0;
     margin: auto;
@@ -32,42 +34,50 @@
 }
 
 .logInForm{
-    width: 400px;
-    height: 400px;
-    padding: 30px;
+    width: 500px;
+    height: 80vh;
+    padding: 30px 60px;
     border-radius: 5px;
-    background-color: var(--main-color);
+    background-color: rgba(0, 0, 0, 0.785);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
-.container h1{
+.styleForm{
+    position: relative;
+    width: 100%;
+}
+
+
+.cont h1{
     margin-bottom: 15px;
 }
 
 .containerInput {
-    height: 40px;
+    height: 60px;
+    width: 100%;
     border-radius: 5px;
-    background-color: grey;
+    background-color: #333333;
     color: white;
     padding-left: 10px;
     border: none;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 input::placeholder{
     color: lightgray;
 }
 
-.container button{
-    height: 40px;
+.logInBtn{
     background-color: red;
     color: white;
     border-radius: 5px;
     border: none;
     font-size: 18px;
     font-weight: 600;
+    padding: 5% 0;
+    margin-top: 10%;
 }
 
 span{
@@ -78,3 +88,30 @@ span b {
     color: white    ;
 }
  
+span a{
+    text-decoration: none;
+}
+
+input + span{
+    margin-top: 20%;
+}
+
+small{
+    margin-top: 5%;
+}
+
+small b {
+    color: rgb(118, 145, 245);
+}
+
+.bigd{
+    position: absolute;
+    color: rgb(135, 138, 136);
+    left: 15px;
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    top: 0;
+}

@@ -51,7 +51,7 @@
 
 .big{
     position: absolute;
-    color: rgb(95, 97, 96);
+    color: rgb(135, 138, 136);
     left: 15px;
     margin: auto;
     font-size: 20px;
@@ -62,7 +62,7 @@
 
 .small{
     position: absolute;
-    color: rgb(95, 97, 96);
+    color: rgb(135, 138, 136);
     left: 15px;
     display: flex;
     height: 100%;
