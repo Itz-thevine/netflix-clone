@@ -36,21 +36,49 @@
 .info{
     position: absolute;
     margin: 0 40px;
-    bottom: 100px;
+    bottom: 80px;
     color: white;
     width: 40%;
     display: flex;
     flex-direction: column;
 }
 
-.info img{
+.info .mainT{
     width: 100%;
     height: 100%;
+    font-size: 60px;
+    padding-left: 7px;
+}
+
+.featuredInfo{
+    display: flex;
+    padding-left: 7px;
+    margin-bottom: 13px;
+}
+
+.featuredInfo p {
+    margin-right: 2%;
+    color: lightgray;
+    font-size: 15px;
+}
+
+.featuredInfoBox{
+    border: 1px solid lightgray;
+    padding: 0 2%;
+}
+
+.bgDark{
+    background: rgb(13,13,13);
+    background: linear-gradient(109deg, rgba(13,13,13,0.7839307598039216) 0%, rgba(0,0,0,0) 100%);    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
 }
 
 .info span{
     margin: 6px 0 10px 10px;
     font-size: 15px;
+    color: lightgray;
 }
 
 .button{
@@ -64,12 +92,16 @@
     align-items: center;
     background-color:  white;
     padding: 5px 15px;
-    color: var(--main-color);
+    color: black;
     margin-right: 8px;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.play span{
+    color: black;
 }
 
 .more{
@@ -79,7 +111,7 @@
     padding: 5px 15px;
     color: white;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: 600;
     cursor: pointer;
 }

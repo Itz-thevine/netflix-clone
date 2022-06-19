@@ -6,6 +6,12 @@
     /* position: relative; */
 }
 
+.top{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
 .wrapper{
     padding: 20px 50px;
     display: flex;

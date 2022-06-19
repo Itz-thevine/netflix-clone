@@ -25,7 +25,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -78,6 +78,7 @@ input::placeholder{
     font-weight: 600;
     padding: 5% 0;
     margin-top: 10%;
+    cursor: pointer;
 }
 
 span{
@@ -93,12 +94,9 @@ span a{
 }
 
 input + span{
-    margin-top: 20%;
+    margin-top: 30px;
 }
 
-small{
-    margin-top: 5%;
-}
 
 small b {
     color: rgb(118, 145, 245);
@@ -111,7 +109,15 @@ small b {
     margin: auto;
     font-size: 20px;
     display: flex;
-    height: 100%;
+    height: 60px;
     align-items: center;
     top: 0;
+}
+
+.errMsg{
+    background-color: #E87C03;
+    display: flex;
+    width: 100%;
+    padding: 2% 4%;
+    border-radius: 5px;
 }

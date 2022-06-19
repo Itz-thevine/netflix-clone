@@ -20,6 +20,9 @@ function LogIn() {
         // console.log(password) 
     }
 
+    console.log(email.length, password.length);
+    console.log(email, password)
+
     const [focusedM, setFocusedM] = useState(false)
     const [focusedP, setFocusedP] = useState(false)
     const Mailblur = ()=>  setFocusedM(false)
@@ -37,6 +40,7 @@ function LogIn() {
     // formik validation
     const navigate = useNavigate()
   
+    const [errMsg, setErrMsg] = useState('');
 
     return (
         <Formik
@@ -78,13 +82,13 @@ function LogIn() {
                     })
                     localStorage.setItem('users', JSON.stringify(res))
                     navigate('/home')
-                    // setErrMsg(false)
+                    setErrMsg(false)
                     }).catch((err)=> {
-                    //   let dError = JSON.stringify(err);
-                    //   let getError = JSON.parse(dError) 
-                    //   setErrMsg(getError.code)
-                    console.log(err)
-                      
+                        let dError = JSON.stringify(err);
+                        let getError = JSON.parse(dError).code 
+                        let value = getError.replace(/-/g, " ");
+                        let mainErr = value.replace("auth/", '')
+                        setErrMsg(mainErr.charAt(0).toUpperCase() + mainErr.slice(1))                      
                     })
 
                   setSubmitting(false);
@@ -114,6 +118,14 @@ function LogIn() {
                     <div className='cont'>
                         <Form className='logInForm'>
                             <h1>Sign In</h1>
+                            {
+                              errMsg && (  
+                                <div className='errMsg'>
+                                    {errMsg}
+                                </div>
+                                )
+                            }   
+
                             <div className='styleForm' style={{marginTop: '10%'}}>
                                 <input type='email' name="email" onChange={(e)=>changeEmail(e.target.value), handleChange} onFocus={Mailfocus} value={values.email} onBlur={Mailblur, handleBlur} className='containerInput'/>
                                 <div className='showErr'>

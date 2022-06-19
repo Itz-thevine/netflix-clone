@@ -59,7 +59,7 @@ const GetStarted = () => {
             }).catch((err)=> {
             let dError = JSON.stringify(err)
             let getError = JSON.parse(dError).code
-            let value = getError.replace("-", " ");
+            let value = getError.replace(/-/g, " ");
             let mainErr = value.replace("auth/", '')
             setErr(mainErr.charAt(0).toUpperCase() + mainErr.slice(1))
             setShowEmail(true)

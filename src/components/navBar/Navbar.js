@@ -3,20 +3,28 @@ import './Navbar.css'
 import * as BiIcon from 'react-icons/bi'
 import * as IoIcon5 from 'react-icons/io5'
 import * as IoIcon from 'react-icons/io'
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const navigate = useNavigate();
 
     window.onscroll = () =>{
         setIsScrolled(window.pageYOffset === 0 ? false : true);
         return () => (window.onscroll = null)
     }
 
+    const logOut = () =>{
+        Cookies.remove('token')
+        localStorage.removeItem('view')
+        navigate('/login')
+    }
     
     
     return (
         <div className={isScrolled ? 'navBar scrolled' : 'navBar'}>
-            <div className='container'>
+            <div className='containerd'>
                 <div className='left'>
                     <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img>
                     <span>Home</span>
@@ -34,7 +42,7 @@ const Navbar = () => {
                         <IoIcon.IoMdArrowDropdown className='icons'/>
                         <div className='option'>
                             <span>Settings</span>
-                            <span>Log Out</span>
+                            <span onClick={logOut}>Log Out</span>
                         </div>
                     </div>    
                 </div>
