@@ -20,9 +20,6 @@ function LogIn() {
         // console.log(password) 
     }
 
-    console.log(email.length, password.length);
-    console.log(email, password)
-
     const [focusedM, setFocusedM] = useState(false)
     const [focusedP, setFocusedP] = useState(false)
     const Mailblur = ()=>  setFocusedM(false)
@@ -73,7 +70,7 @@ function LogIn() {
                   let authVal = JSON.stringify(values, null, 2);
                   let getAuth = JSON.parse(authVal)
                   signInWithEmailAndPassword(auth, getAuth.email, getAuth.password).then((res)=> {
-                    console.log(res)
+                    // console.log(res)
                     Cookie.set('nettietoken', res.user.accessToken, {
                       expires: 1,
                       secure:true,
