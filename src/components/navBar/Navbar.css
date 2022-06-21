@@ -80,8 +80,15 @@
     .navBar{
         padding: 3% 0;
         height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }   
     
+    .containerd{
+        padding: 0 0;
+        justify-content: center;
+    }
 
     
 }
