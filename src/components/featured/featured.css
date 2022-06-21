@@ -190,5 +190,17 @@
 }
 
 @media screen and (max-width: 900px) {
-    
+    .info{
+        width: 86%;
+    }
+    .category{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .leftSeries{
+        left: 225px;
+    }
+    .leftMovie{
+        left: 195px;
+    }
 }

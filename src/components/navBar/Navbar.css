@@ -16,6 +16,7 @@
 
 .containerd{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0 3.125rem;
@@ -71,4 +72,16 @@
 
 .option span{
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .navBar{
+        padding: 3% 0;
+        height: auto;
+    }   
+    
+
+    
 }
