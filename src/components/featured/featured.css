@@ -17,7 +17,7 @@
     left: 50px;
     color: white;
     display: flex;
-    align-items: center;
+    
     justify-content: center;
     z-index: 2;
 }
@@ -32,6 +32,74 @@
     padding: 5px 10px;
     border: none;
 }
+
+.mos{
+    background-color: black;
+    width: 100px;
+    display: flex;
+    padding: 3% 0;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mosContainer{
+    display: flex;
+}
+
+.eachMovieContainer{
+    margin-top: 5px;
+    background-color: black;
+    padding: 0% 5%;
+    cursor: pointer;
+}
+
+.eachMovieContainer > div{
+    padding: 2% 0;
+}
+
+.eachSeriesContainer{
+    margin-top: 5px;
+    
+}
+
+.eachView{
+    background-color: red;
+    padding: 2% 5%;
+    cursor: pointer;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.unique{
+    position: absolute;
+    background-color:black;
+    width: 175px;
+    z-index: 15;
+}
+
+.unique div{
+    padding: 2% 5%;
+}
+
+.unique div:hover{
+    background-color: red;
+    color: black;
+    cursor: pointer;
+}
+
+.leftMovie{
+    left: 295px;
+}
+
+.leftSeries{
+    left: 330px;
+}
+
 
 .info{
     position: absolute;
@@ -119,4 +187,8 @@
 .button span{
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    
 }

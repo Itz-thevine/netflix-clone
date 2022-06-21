@@ -74,7 +74,7 @@ function LogIn() {
                   let getAuth = JSON.parse(authVal)
                   signInWithEmailAndPassword(auth, getAuth.email, getAuth.password).then((res)=> {
                     console.log(res)
-                    Cookie.set('token', res.user.accessToken, {
+                    Cookie.set('nettietoken', res.user.accessToken, {
                       expires: 1,
                       secure:true,
                       sameSite: 'strict',

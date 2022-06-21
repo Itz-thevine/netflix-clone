@@ -19,17 +19,32 @@ const Navbar = () => {
         Cookies.remove('token')
         localStorage.removeItem('view')
         navigate('/login')
+        localStorage.removeItem('mos')
     }
     
+    const setSeries = () =>{
+        localStorage.setItem('mos', JSON.stringify('Series'))
+        window.location.reload(false);
+    }
     
+    const setMovies = () =>{
+        localStorage.setItem('mos', JSON.stringify('Movie'))
+        window.location.reload(false);
+    }
+    
+    const removeAll = () => {
+        localStorage.removeItem('mos')
+        window.location.reload(false)
+    }
+
     return (
         <div className={isScrolled ? 'navBar scrolled' : 'navBar'}>
             <div className='containerd'>
                 <div className='left'>
                     <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img>
-                    <span>Home</span>
-                    <span>Series</span>
-                    <span>Movies</span>
+                    <span onClick={removeAll}>Home</span>
+                    <span onClick={setSeries}>Series</span>
+                    <span onClick={setMovies}>Movies</span>
                     <span>Popular</span>
                     <span>My List</span>
                 </div>

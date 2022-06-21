@@ -121,3 +121,9 @@ small b {
     padding: 2% 4%;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 900px) {
+    .logIn{
+        background: black;
+    }
+}

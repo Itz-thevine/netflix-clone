@@ -9,10 +9,10 @@ import { useNavigate } from 'react-router-dom'
 
 export const Home = () => {
     const navigate = useNavigate();
-    const token = Cookies.get('token') || ''
+    const token = Cookies.get('nettietoken') || ''
 
     const valuer = JSON.parse(localStorage.getItem('view'));
-    
+    const mos = JSON.parse(localStorage.getItem('mos'))
      
 
     // redirect if token is not found
@@ -93,7 +93,7 @@ export const Home = () => {
                     creators = {db[variable].creator}
                     actors= {db[variable].actors}
                     genre= {db[variable].genre}
-                    type={''}
+                    type={mos}
                     textImg={db[variable].textImg}
                     release= {db[variable].releasedDate}
                 />

@@ -14,10 +14,10 @@ function  Register() {
         <div className='register'>
             <div className='top'>
                 <div className='wrapper'>
-                <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img> 
-                <Link to='/logIn'>
-                    <button className='signInBtn'>Sign In</button>    
-                </Link>          
+                    <img src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'></img> 
+                    <Link to='/logIn'>
+                        <button className='signInBtn'>Sign In</button>    
+                    </Link>          
                 </div>
             </div>
             <div className='container'>
@@ -67,7 +67,7 @@ function  Register() {
                 <div className='other'>
                     <div className='otherSection'>
                         <h1 className='s50'>Watch everywhere.</h1>
-                        <h2 className='s20' style={{width: '40%'}}>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
+                        <h2 className='s20 spec'>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
                     </div>
                 </div>
             </HomeOther>

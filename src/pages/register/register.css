@@ -1,3 +1,7 @@
+*{
+
+}
+
 .register{
     width: 100%;
     height: 100vh;
@@ -93,6 +97,7 @@
 /* other section */
 .other{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -154,4 +159,57 @@
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+.spec{
+    width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+    .register{
+        height: 80vh;
+    }
+
+    .container{
+        padding: 3%;
+    }
+    .s50{
+        text-align: center;
+    }
+    .s20{
+        text-align: center;
+    }
+    .spec{
+        width: 100%;
+    }
+    .other{
+        flex-direction: column;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .otherSection{
+        width: 100%;
+        flex: none;
+        padding-bottom: 35px;
+        padding-top: 35px ;
+    }
+    .post{
+        width: 400px;
+    }
+
+    .post img{
+        width: 420px;
+    }
+    .post video{
+        width: 320px;
+    }
+    .our-story-card-animation{
+        top: 61px;
+        left: 46px;
+    }
+    .ques{
+        width: 80% !important;
+    }
 }
