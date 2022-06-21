@@ -18,7 +18,13 @@ function ListItems({index, dImg, valueGet}) {
     const vid = '<iframe width="1090" height="613" src="https://www.youtube.com/embed/UT5F9AXjwhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     // console.log(index);
     return (
-        <div className='listItems'  onClick={newMovieDisplay} style={{left: isHovered && index * 254 - 50 + index * 5 }}  onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
+        <div className='listItems'  onClick={()=> {
+            newMovieDisplay(); 
+            setIsHovered(true)
+            }} 
+
+            style={{left: isHovered && index * 254 - 50 + index * 5 }}  onMouseEnter={() => setIsHovered(true) } onMouseLeave={() => setIsHovered(false)} 
+        >
             <img src={dImg.poster}></img>
             <div className='posterName'>{dImg.name}</div>
             {isHovered && (
