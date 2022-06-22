@@ -22,6 +22,7 @@ export const Home = () => {
         }
     }, [])
 
+    
     // generate random number for the display on login 
     const getRndInteger = (min, max) => {
         return Math.floor(Math.random() * (max - min) ) + min;

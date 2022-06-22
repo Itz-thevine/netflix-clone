@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     const logOut = () =>{
-        Cookies.remove('token')
+        Cookies.remove('nettietoken')
         localStorage.removeItem('view')
         navigate('/login')
         localStorage.removeItem('mos')
